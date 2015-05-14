@@ -43,3 +43,6 @@ group :development, :test do
   gem 'spring'
 end
 
+# Assets
+gem 'slim-rails', '~> 3.0.0'
+

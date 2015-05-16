@@ -23,6 +23,7 @@ group :development, :test do
   gem "spring"
   gem "sqlite3"
   gem "rspec-rails", "~> 3.0.0"
+  gem "factory_girl_rails"
 
   # For adding api.shipinator.local to hosts file.
   gem "ghost"

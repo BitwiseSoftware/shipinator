@@ -12,6 +12,9 @@ class Api::ParcelController < ApplicationController
   end
 
   def index
+    respond_to do |format|
+      format.json {render(json: Parcel.all)}
+    end
   end
 
   def show

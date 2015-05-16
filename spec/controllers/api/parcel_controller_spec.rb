@@ -20,5 +20,12 @@ RSpec.describe(Api::ParcelController, type: :controller) do
       end
     end
   end
+
+  describe("GET #index") do
+    it("is succussful") do
+      get(:index, format: "json")
+      expect(response).to(be_success)
+    end
+  end
 end
 

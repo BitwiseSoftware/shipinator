@@ -22,7 +22,7 @@ group :development, :test do
   # Keep rails running in background.
   gem "spring"
   gem "sqlite3"
-  gem "rspec-rails", "~> 3.0.0"
+  gem "rspec-rails", "~> 3.2.0"
   gem "factory_girl_rails"
 
   # For adding api.shipinator.local to hosts file.

@@ -22,5 +22,8 @@ group :development, :test do
   # Keep rails running in background.
   gem "spring"
   gem "sqlite3"
+
+  # For adding api.shipinator.local to hosts file.
+  gem "ghost"
 end
 

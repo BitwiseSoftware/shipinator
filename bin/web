@@ -4,6 +4,7 @@ case ENV["RAILS_ENV"]
 when "production"
   `rails server -p #{ENV["PORT"]} -e production`
 when "development"
+  `rbenv sudo ghost add api.shipinator.local`
   `rails server -p #{ENV["PORT"]} -e development`
 else
   puts "Please specify 'RAILS_ENV' before calling 'foreman start'"

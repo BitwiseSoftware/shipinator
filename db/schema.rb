@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150517052037) do
+ActiveRecord::Schema.define(version: 20150517161508) do
+
+  create_table "addresses", force: :cascade do |t|
+    t.text     "name"
+    t.text     "street"
+    t.text     "city"
+    t.text     "region"
+    t.text     "country"
+    t.text     "postal_code"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "parcels", force: :cascade do |t|
     t.float    "height",     null: false

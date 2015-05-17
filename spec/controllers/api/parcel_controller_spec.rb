@@ -27,5 +27,13 @@ RSpec.describe(Api::ParcelController, type: :controller) do
       expect(response).to(be_success)
     end
   end
+
+  describe("GET #show") do
+    it("is successful") do
+      Parcel.create!(FactoryGirl.attributes_for(:parcel))
+      get(:show, format: "json", id: 1)
+      expect(response).to(be_success)
+    end
+  end
 end
 

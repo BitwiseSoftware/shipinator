@@ -18,7 +18,9 @@ class Api::ParcelController < ApplicationController
   end
 
   def show
-    respond_with(Parcel.find(params[:id]))
+    respond_to do |format|
+      format.json {render(json: Parcel.find(params[:id]))}
+    end
   end
 
 private

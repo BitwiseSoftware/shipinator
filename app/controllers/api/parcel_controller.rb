@@ -26,7 +26,7 @@ class Api::ParcelController < ApplicationController
 private
   def parcel_params
     params.require(:parcel).permit(
-      :height, :width, :length
+      :height, :width, :length, :weight
     )
   end
 end

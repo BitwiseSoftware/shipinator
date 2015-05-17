@@ -17,6 +17,10 @@ RSpec.describe(Parcel, type: :model) do
     it("without a length") do
       expect(FactoryGirl.build(:parcel, length: nil)).to_not(be_valid)
     end
+
+    it("without a weight") do
+      expect(FactoryGirl.build(:parcel, weight: nil)).to_not(be_valid)
+    end
   end
 end
 

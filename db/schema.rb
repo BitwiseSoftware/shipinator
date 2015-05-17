@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150516162638) do
+ActiveRecord::Schema.define(version: 20150517052037) do
 
   create_table "parcels", force: :cascade do |t|
     t.float    "height",     null: false
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150516162638) do
     t.float    "length",     null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float    "weight"
   end
 
 end

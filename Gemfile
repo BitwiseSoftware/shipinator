@@ -16,6 +16,11 @@ gem "coffee-rails", "~> 4.1.0"
 gem "sass-rails", "~> 5.0"
 gem "jquery-rails"
 
+###############
+# Postal Services
+###############
+gem "canada-post-ruby", path: "../canada-post-ruby"
+
 group :development, :test do
   gem "byebug"
   gem "web-console", "~> 2.0"

@@ -13,6 +13,10 @@ RSpec.describe(Shipment, type: :model) do
     it("without a destination") do
       expect(FactoryGirl.build(:shipment, destination_id: nil)).to_not(be_valid)
     end
+
+    it("without a parcel") do
+      expect(FactoryGirl.build(:shipment, parcel_id: nil)).to_not(be_valid)
+    end
   end
 
   context("when return_address") do

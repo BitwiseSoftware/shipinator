@@ -26,7 +26,7 @@ class Api::ShipmentController < ApplicationController
 private
   def shipment_params
     params.require(:shipment).permit(
-      :origin_id, :destination_id, :return_address_id
+      :origin_id, :destination_id, :return_address_id, :parcel_id
     )
   end
 end

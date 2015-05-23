@@ -1,3 +1,10 @@
+PATH
+  remote: ../canada-post-ruby
+  specs:
+    canada-post-ruby (0.0.1)
+      httparty (~> 0.13.0)
+      oga (~> 0.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,7 +43,9 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    ansi (1.5.0)
     arel (6.0.0)
+    ast (2.0.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -65,6 +74,9 @@ GEM
       unindent (= 1.0)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
+    httparty (0.13.4)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jquery-rails (4.0.3)
       rails-dom-testing (~> 1.0)
@@ -78,8 +90,12 @@ GEM
     mime-types (2.5)
     mini_portile (0.6.2)
     minitest (5.6.1)
+    multi_xml (0.5.5)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    oga (0.3.4)
+      ast
+      ruby-ll (~> 2.1)
     rack (1.6.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -125,6 +141,9 @@ GEM
       rspec-mocks (~> 3.2.0)
       rspec-support (~> 3.2.0)
     rspec-support (3.2.2)
+    ruby-ll (2.1.1)
+      ansi
+      ast
     sass (3.4.13)
     sass-rails (5.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -172,6 +191,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  canada-post-ruby!
   coffee-rails (~> 4.1.0)
   factory_girl_rails
   foreman

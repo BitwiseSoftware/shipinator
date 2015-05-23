@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     resources(:parcel)
     resources(:address)
     resources(:shipment)
+    resources(:rate)
   end
 
   root("welcome#index")

@@ -4,6 +4,9 @@ Rails.application.routes.draw do
     resources(:parcel)
     resources(:address)
     resources(:shipment)
+    resources(:rate)
+
+    get("shipment/:id/rates" => "shipment#rates")
   end
 
   root("welcome#index")

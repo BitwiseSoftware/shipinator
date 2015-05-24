@@ -35,4 +35,12 @@ RSpec.describe(Api::ShipmentController, type: :controller) do
       expect(response).to(be_success)
     end
   end
+
+  describe("GET #rates") do
+    it("is successful") do
+      Shipment.create!(FactoryGirl.attributes_for(:shipment))
+      get(:rates, format: "json", id: 1)
+      expect(response).to(be_success)
+    end
+  end
 end

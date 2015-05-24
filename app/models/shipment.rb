@@ -3,7 +3,7 @@ require "canada-post-ruby.rb"
 class Shipment < ActiveRecord::Base
   validates(:origin_id, :destination_id, :parcel_id, presence: true)
   before_save(:validate_return_address)
-  after_save(:get_rates)
+  after_save(:get_rates, unless: Proc.new {Rails.env.test?})
 
   belongs_to(:origin, class_name: "Address")
   belongs_to(:destination, class_name: "Address")

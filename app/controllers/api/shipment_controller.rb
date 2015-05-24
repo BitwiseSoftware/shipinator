@@ -23,6 +23,12 @@ class Api::ShipmentController < ApplicationController
     end
   end
 
+  def rates
+    respond_to do |format|
+      format.json {render(json: Shipment.find(params[:id]).rates)}
+    end
+  end
+
 private
   def shipment_params
     params.require(:shipment).permit(

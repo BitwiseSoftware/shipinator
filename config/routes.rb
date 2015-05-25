@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # Need to specify routes because custom routes also exist.
+  resources(:doc, only: [:index])
   get("doc/parcel")
 
   namespace(:api, defaults: {format: "json"},

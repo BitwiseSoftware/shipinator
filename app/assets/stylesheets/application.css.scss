@@ -21,6 +21,31 @@ body {
   color: #484C55;
 }
 
+header nav {
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    width: 130px;
+    color: $secondary-color;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
 h1 {
   color: $secondary-color;
   opacity: 0.5;

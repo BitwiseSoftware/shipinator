@@ -6,5 +6,9 @@ html
     = javascript_include_tag("application", "data-turbolinks-track" => true)
     = csrf_meta_tags
   body
+    header
+      nav: ul
+        li= link_to("Home", root_url)
+        li= link_to("Documentation", doc_index_path)
     = yield
 

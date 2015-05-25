@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get("doc/parcel")
+
   namespace(:api, defaults: {format: "json"},
             constraints: {subdomain: "api"}, path: "/") do
     resources(:parcel)

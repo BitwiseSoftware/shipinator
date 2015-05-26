@@ -2,7 +2,12 @@ doctype html
 html
   head
     title Shipinator
-    = stylesheet_link_tag("application", media: "all", "data-turbolinks-track" => true)
+    = stylesheet_link_tag(\
+        "application", media: "all", "data-turbolinks-track" => true\
+      )
+    = stylesheet_link_tag(\
+        "//fonts.googleapis.com/css?family=Open+Sans:600,400", media: "all"\
+      )
     = javascript_include_tag("application", "data-turbolinks-track" => true)
     = csrf_meta_tags
   body
